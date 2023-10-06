@@ -1,0 +1,32 @@
+@import 'open-props/style';
+@import 'open-props/normalize';
+@import 'open-props/buttons';
+@import '@fontsource/manrope';
+
+:root {
+  --bg-clr: hsl(220 10% 6%);
+  --txt-clr: hsl(220 10% 98%);
+  --font-sans: 'Manrope', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-family: var(--font-sans);
+  color: var(--txt-clr);
+  background-color: var(--bg-clr);
+}
+
+.letter {
+  display: inline-block;
+}
+
+input:not([type='range']) {
+  margin-block: 0.5rem;
+  padding: 0.5rem;
+}
